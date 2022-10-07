@@ -3,7 +3,6 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 8rem;
         height: 300%;
-
     }
 }
 
@@ -13,9 +12,15 @@
         flex-direction: column;
     }
 
+    #vitiello {
+        width: 35%;
+        border-radius: 50%;
+      }
+
     .container-header .header .nav-links {
-        flex-direction: column;
+        flex-direction: flex;
         gap: 0;
+        margin-bottom: 50px;
     }
 
     .container-header .header .nav-links a {
