@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+html {
+    background-color: #6846b8;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.glossary-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 1px 5px 10px #000;
+}
+
+.glossary-container h1 {
+    font-size: 40px;
+}
+
+.glossary-container hr {
+    width: 100%;
+}
+
+.glossary-container dd {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
