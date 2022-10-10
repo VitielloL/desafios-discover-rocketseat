@@ -1,0 +1,80 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--purple);
+}
+
+.container .card-tree {
+    width: 60%;
+    max-width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.container .card-tree .profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container .card-tree .profile img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 3px solid var(--purple);
+}
+
+.container .card-tree .profile h1 {
+    font-size: 14px;
+    color: var(--purple);
+}
+
+.container .card-tree .links {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.container .card-tree .links .link {
+    display: flex;
+    width: 160%;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid var(--purple);
+    color: var(--purple);
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.container .card-tree .socialmedia {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container .card-tree .socialmedia .icon {
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+}
