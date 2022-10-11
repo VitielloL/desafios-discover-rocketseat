@@ -7,6 +7,9 @@ const openModal = {
     },
     send() {
         checkValuesInputs();
+    },
+    send2(){
+        checkValuesInputs2()
     }
 }
 
@@ -23,6 +26,21 @@ function checkValuesInputs() {
         alert(`Obrigado ${Name}, avisaremos quando o foguete for lançado`)
         document.querySelector(".modal-container").classList.remove('active')
     }
+}
+
+function checkValuesInputs2() {
+    inputName = document.querySelector('.name-input')
+    inputEmail = document.querySelector('.email-input')
+
+    const Name = inputName.value;
+    const Email = inputEmail.value;
+
+    if (Name == '' || Email == '') {
+        alert('Preencha todos os dados antes')
+    } else {
+        alert(`Obrigado ${Name}, avisaremos o local que a julia irá comemorar!!`)
+        document.querySelector(".modal-container").classList.remove('active')
+    }    
 }
 
 const formatZero = (digito) => `0${digito}`.slice(-2);
