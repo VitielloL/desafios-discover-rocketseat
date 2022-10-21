@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./globalstyle.css">
+    <title>Sidebar Menu</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <h3>
+                    <img src="./images/pet.svg">
+                    <i>PicVet</i></i></h3>
+            </div>
+            <button id ="btn"><img src="./images/menu.svg" alt="menu"></button>
+        </div>
+        <ul>
+            <li>
+                <img class="icon_search" src="./images/search.svg" alt="Buscar">
+                <input type="text" placeholder="Buscar...">
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/grid.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/pet.svg" alt="Pets">
+                    <span>Pets</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/user.svg" alt="Clientes">
+                    <span>Clientes</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/vet.svg" alt="Veterinários">
+                    <span>Vets</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/settings.svg" alt="Configurações">
+                    <span>Configurações</span>
+                </a>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="./images/photo.jpg" alt="Foto de perfil">
+                    <div class="name_job">
+                        <div class="name">Rosebel Vitiello</div>
+                        <div class="job">Veterinária</div>
+                    </div>
+                </div>
+                <img src="./images/log-out.svg" id="log_out" alt="Sair">
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">Dashboard</div>
+    </div>
+</body>
+</html>
+<script src="./script.js"></script>
