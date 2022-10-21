@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Ubuntu&display=swap');
+
+:root {
+    --ice: #EEEEEE;
+    --dark: #0F0F10;
+    --gold: #958044;
+    --white: #FFFFFF;
+    
+    /* rocketseat colors */
+    --black: #000000;
+    --purple: #6846b8;
+    --green: #03be57;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}

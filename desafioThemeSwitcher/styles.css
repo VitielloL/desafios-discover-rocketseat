@@ -1,0 +1,46 @@
+.container {
+    width: 100vw;
+    height: 100vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ice);
+    transition: all 1s ease;
+}
+
+.container.active {
+    width: 100vw;
+    height: 100vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+    transition: all 1s ease;
+}
+
+.switcher {
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ballh1 {
+    display: flex;
+    transition: all 1s ease;
+}
+
+.ballh1.active {
+    display: none;
+}
+
+.switcher #ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--purple);
+    cursor: pointer;
+}
