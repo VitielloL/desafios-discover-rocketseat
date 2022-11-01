@@ -97,7 +97,7 @@
 
 .container-cards .cards .technologies h1 {
   font-size: 18px;
-  margin: 50px 0 10px 0;
+  margin: 25px 0 10px 0;
 }
 
 .container-cards .cards .technologies .icons {
@@ -116,6 +116,16 @@
   align-items: left;
   justify-content: flex-start;
   gap: 0.8rem;
+}
+
+.container-cards .cards .buttons p {
+  text-decoration: none;
+  background-color: var(--recipe);
+  color: var(--black);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .container-cards .cards .buttons a {
@@ -249,8 +259,8 @@
 
 /*login form*/
 #lf {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
 
 #canva-lf {
