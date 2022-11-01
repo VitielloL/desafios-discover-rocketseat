@@ -38,7 +38,7 @@
     .container-cards {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 8rem;
-        height: 700%;
+        height: 1000%;
     }
 
     .footer {

@@ -259,13 +259,24 @@
 }
 
 /*rocketshoes*/
-#rf {
+#rs {
   width: 80%;
   height: 80%;
 }
 
-#canva-rf{
+#canva-rs{
   background-color: var(--ice);
+  padding: 0;
+}
+
+/*rocket blog*/
+#rb {
+  width: 82%;
+  height: 100%;
+}
+
+#canva-rb{
+  background-color: var(--tree);
   padding: 0;
 }
 
