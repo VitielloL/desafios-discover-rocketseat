@@ -40,4 +40,9 @@
         grid-gap: 8rem;
         height: 700%;
     }
+
+    .footer {
+        display: none;
+        visibility:hidden;
+    }
 }
