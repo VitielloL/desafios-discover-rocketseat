@@ -258,14 +258,26 @@
   padding: 0;
 }
 
-/* rocketcards */
-#rc {
-  width: 35%;
-  height: 100px;
+/*rocketshoes*/
+#rf {
+  width: 80%;
+  height: 80%;
 }
 
-#canva-rc {
-  background-color: var(--rc);
+#canva-rf{
+  background-color: var(--ice);
+  padding: 0;
+}
+
+ /* rocket coffe*/
+#rco {
+  width: 100%;
+  height: 100%;
+}
+
+#canva-rco {
+  background-color: var(--ice);
+  padding: 0;
 }
 
 /* rocketflix */
@@ -278,14 +290,13 @@
   background-color: var(--rf);
 }
 
-/* maratonadiscover */
-#marathon {
+/* rocketcards */
+#rc {
   width: 35%;
   height: 100px;
 }
 
-#canva-marathon {
-  background-color: var(--devfinances);
+#canva-rc {
+  background-color: var(--rc);
 }
-
 
