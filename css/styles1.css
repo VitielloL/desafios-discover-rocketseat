@@ -1,0 +1,207 @@
+/*===== BASE =====*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background: var(--bg-color); */
+    background: var(--ice);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/*===== HEADER =====*/
+.container-header {
+    width: 100%;
+    height: 10%;
+    background-color: var(--white);
+}
+
+.container-header .header {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--purple);
+}
+
+.container-header .header .logo {
+    color: var(--white);
+}
+  
+.container-header .header .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+  
+.container-header .header .nav-links a {
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 500ms ease;
+}
+  
+.container-header .header .nav-links a:hover {
+    background-color: var(--white);
+    color: var(--purple);
+}
+
+.vitiello {
+    width: 15%;
+    border-radius: 50%;
+}
+
+/*===== BODY =====*/
+.main-scope {
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.page-projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 95%;
+    gap: 3rem;
+}
+
+.project-container {
+    width: 22rem;
+    height: 30rem;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -20px;
+    border-radius: 8px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-container:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.project-content {
+    padding: 0.5rem 1.5rem 1.5rem;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+.project-description {
+    display: flex;
+    font-size: small;
+}
+
+.project-tec .icons {
+    margin-top: 5px;;
+    width: 100%;
+    height: 100%;
+  }
+  
+.project-tec .icons #html, #css, #js {
+    width: 25px;
+}
+
+.project-row-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-content .project-link {
+    background: var(--purple);
+    text-decoration: none;
+    align-self: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: var(--white);
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: max-content;
+    justify-self: center;
+}
+
+.project-content .project-link:hover {
+    background-color: var(--white);
+    color: var(--purple);
+    border:solid 1px var(--purple);
+}
+
+.responsive-stamp {
+    display: flex;
+    margin-top: 10px;
+    font-size: small;
+}
+
+.responsive-stamp p {
+    background-color: var(--recipe);
+    color: var(--black);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1440px) {
+    .page-projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container-header .header {
+        flex-direction: column;
+    }
+
+    .vitiello {
+        width: 35%;
+        border-radius: 50%;
+      }
+
+    .container-header .header .nav-links {
+        flex-direction: flex;
+        gap: 0;
+        margin-bottom: 50px;
+    }
+
+    .container-header .header .nav-links a {
+        width: 100%;
+    }
+
+    .container-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8rem;
+        height: 400%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page-projects {
+        grid-template-columns: 1fr;
+    }
+}
