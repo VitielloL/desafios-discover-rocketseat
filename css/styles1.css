@@ -73,7 +73,7 @@ body {
 .page-projects {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 95%;
+    width: 90%;
     gap: 3rem;
 }
 
@@ -169,7 +169,7 @@ body {
 @media screen and (max-width: 1440px) {
     .page-projects {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10rem;
+        gap: 5rem;
     }
 }
 
