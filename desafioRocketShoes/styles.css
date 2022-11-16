@@ -1,0 +1,260 @@
+:root {
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --black: #000;
+    --text-description: #9C9696;
+}
+
+/*===== RESET =====*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*===== BASE =====*/
+body {
+    overflow-x: hidden;
+    background: var(--background);
+}
+
+/*===== HEADER & NAVIGATION =====*/
+.nav {
+    padding: 0 3.75rem;
+    display: flex;
+    background: none;
+    justify-content: space-between;
+    width: 100%;
+    height: 6rem;
+    z-index: 2;
+    position: fixed;
+}
+
+.nav .nav-logo {
+    width: 3.25rem;
+}
+
+.nav .nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.nav .nav-list {
+    display: flex;
+    gap: 5.625rem;
+}
+
+.nav .nav-list .nav-item {
+    font-size: 1rem;
+}
+
+.nav .nav-list .nav-item .nav-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: uppercase;
+    position: relative;
+    display: grid;
+}
+
+.nav .nav-list .nav-item .nav-link:after {
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -1rem;
+    background-color: var(--black);
+    transition: width 0.3s;
+}
+
+.nav .nav-list .nav-item .nav-link:hover:after {
+    width: 100%;
+}
+
+.nav .nav-list .nav-item .nav-link i {
+    font-size: 1.75rem;
+}
+
+/* Form Search */
+.nav .nav-form {
+    align-self: center;
+    position: relative;
+}
+
+.nav .nav-form .nav-form-input {
+    background: var(--background);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    border: none;
+}
+
+.nav .nav-form .nav-form-button {
+    position: absolute;
+    top: 0;
+    left: 0.25rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 1rem;
+}
+
+/* Scroll Nav */
+.scroll-nav {
+    background: var(--background);
+}
+
+/* Scroll Button */
+.nav .nav-form .nav-form-button.scroll-item,
+.nav .nav-form .nav-form-input.scroll-item {
+    background: var(--black);
+    color: var(--background);
+}
+
+.nav .nav-form .nav-form-input.scroll-item::placeholder {
+    color: var(--background);
+}
+
+/*===== MAIN =====*/
+main {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+/* Information */
+main .information {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 6rem 0 0;
+}
+
+main .information div {
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+main .information div .information-title {
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+main .information div .information-description {
+    color: var(--text-description);
+}
+
+main .information div .information-price {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+main .information div .information-button {
+    text-transform: uppercase;
+    color: var(--background);
+    background: var(--button);
+    border: none;
+    width: max-content;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background 0.3s, border-radius 0.3s;
+}
+
+main .information div .information-button:hover {
+    background: var(--button);
+    border-radius: 0 0 1rem 0;
+}
+
+/* Gallery */
+main .gallery {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-background);
+    padding: 6rem 0 0;
+}
+
+main .gallery #selected-photo {
+    width: 32.5rem;
+}
+
+main .gallery .gallery-photos {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main .gallery .gallery-photos img {
+    width: 15.625rem;
+    background-color: var(--background);
+    cursor: pointer;
+    position: relative;
+    display: grid;
+}
+
+main .gallery .gallery-photos img:nth-child(1) {
+    height: 11.425rem;
+    object-fit: cover;
+}
+
+/*===== FOOTER =====*/
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+}
+
+footer video {
+    width: 15.625rem;
+    height: 100%;
+    background-color: var(--black);
+}
+
+footer .social-list {
+    display: flex;
+    list-style: none;
+    gap: 5.625rem;
+}
+
+footer .social-list .social-item {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+footer .social-list .social-item .social-link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+footer .link-explore {
+    display: flex;
+    gap: 0.875rem;
+    width: 25rem;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+    color: var(--background);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
