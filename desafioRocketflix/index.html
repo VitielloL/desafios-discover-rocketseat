@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.ico"
+            type="image/x-icon"
+        />
+        <title>Rocketflix</title>
+    </head>
+
+    <body>
+        <div class="main">
+            <img width="150" src="./assets/shuffle.svg" alt="">
+            <h1>Não sabe o que assistir?</h1>
+
+            <div class="movieInfos">
+                <img id="movieImg" width="200" src="" alt="">
+                <div>
+                    <h2 id="movieTitle" ></h2>
+                    <p id="movieDesc"></p>
+                </div>
+            </div>
+
+            <button id="button" ><img width="50" src="./assets/shuffle.svg" alt="">Encontrar filme</button>
+            <p class="button-instruction">
+                Clique em "Encontrar filme" que traremos informações <br>
+                de algum filme para você assistir hoje.
+            </p>
+        </div>
+        <script type="module" src="script.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
