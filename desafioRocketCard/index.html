@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Rocketcard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="bg-card">
+                <p>Compartilhe seu #rocketcard</p>
+                <div class="border-card">
+                    <div class="content-card">
+                        <div class="github-profile">
+                            <img src="./assets/GitHub-Mark-Light-64px.png" alt="">
+                            <p id="username"></p>
+                        </div>
+                        <div class="avatar-container">
+                            <img src="./assets/profile.webp" id="avatar" alt="Foto github">
+                        </div>
+                        <div class="infos-container">
+                            <div class="info-content">
+                                <img src="./assets/following.svg" alt="">
+                                <p id="followers">0</p>
+                                <p>Seguidores</p>
+                            </div>
+                            <div class="info-content">
+                                <img src="./assets/following.svg" alt="">
+                                <p id="following">0</p>
+                                <p>Seguindo</p>
+                            </div>
+                            <div class="info-content">
+                                <img src="./assets/repository.svg" alt="">
+                                <p id="repos">0</p>
+                                <p>Repositórios</p>
+                            </div>
+                            <div class="info-content">
+                                <img src="./assets/company.svg" alt="">
+                                <p id="company"></p>
+                            </div>
+                            <div class="info-content">
+                                <img src="./assets/location.svg" alt="">
+                                <p id="loc"></p>
+                            </div>
+                        </div>
+                        <div class="logo-company">
+                            <img src="./assets/logo.svg" alt="">
+                            <h3>ROCKETSEAT</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <p>Usuário GitHub:</p>
+                <input type="text" name="" id="user">
+                <button onclick="getUserInfo()">Gerar Rocketcard</button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
